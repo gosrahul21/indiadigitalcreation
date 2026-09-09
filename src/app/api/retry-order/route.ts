@@ -25,6 +25,9 @@ export async function POST(req: Request) {
     // This circumvents Cashfree's unique order_id constraint while keeping our DB clean
     const cashfreeOrderId = `${dbOrder.id}_R${Date.now()}`;
 
+    // Determine the base URL for the return redirect
+    const baseUrl = process.env.NEXTAUTH_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3001');
+
     const options = {
       method: 'POST',
       headers: {
@@ -43,7 +46,7 @@ export async function POST(req: Request) {
           customer_email: dbOrder.customerEmail || 'customer@example.com'
         },
         order_meta: {
-          return_url: `${process.env.NEXTAUTH_URL}/checkout/success?order_id=${dbOrder.id}`
+          return_url: `${baseUrl}/checkout/success?order_id=${dbOrder.id}`
         },
         order_amount: dbOrder.totalAmount || 299.00,
         order_currency: 'INR'

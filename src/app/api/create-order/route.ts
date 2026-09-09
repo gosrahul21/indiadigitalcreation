@@ -50,6 +50,9 @@ export async function POST(req: Request) {
       }
     });
 
+    // Determine the base URL for the return redirect
+    const baseUrl = process.env.NEXTAUTH_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3001');
+
     const options = {
       method: 'POST',
       headers: {
@@ -68,7 +71,7 @@ export async function POST(req: Request) {
           customer_email: customer_email || (session?.user?.email) || 'customer@example.com'
         },
         order_meta: {
-          return_url: `${process.env.NEXTAUTH_URL}/checkout/success?order_id={order_id}`
+          return_url: `${baseUrl}/checkout/success?order_id={order_id}`
         },
         order_amount: order_amount || 299.00,
         order_currency: 'INR'
