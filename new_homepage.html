@@ -1,0 +1,695 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet" class=""><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#afd500", "on-primary": "#2a3500", "on-background": "#e4e3dc", "tertiary-fixed-dim": "#c5c8b7", "surface": "#131410", "primary": "#ffffff", "on-tertiary": "#2e3226", "secondary": "#c7c7c1", "on-tertiary-fixed-variant": "#44483b", "surface-dim": "#131410", "primary-fixed": "#c8f300", "outline-variant": "#444933", "text-editorial": "#F4F4ED", "secondary-fixed-dim": "#c7c7c1", "on-secondary-container": "#b9b9b3", "on-primary-fixed-variant": "#3d4c00", "tertiary-fixed": "#e1e4d2", "surface-deep": "#171814", "surface-card": "#454640", "surface-variant": "#343531", "on-primary-fixed": "#171e00", "on-secondary-fixed-variant": "#464743", "outline": "#8f9378", "on-surface-variant": "#c5c9ac", "on-error": "#690005", "surface-container-high": "#2a2a26", "border-subtle": "rgba(244, 244, 237, 0.12)", "on-error-container": "#ffdad6", "inverse-primary": "#526600", "border-active": "#D2FF00", "surface-bright": "#393a35", "on-primary-container": "#586c00", "secondary-container": "#494945", "error-container": "#93000a", "secondary-fixed": "#e3e3dd", "inverse-surface": "#e4e3dc", "inverse-on-surface": "#30312c", "on-secondary-fixed": "#1b1c19", "primary-container": "#c8f300", "on-secondary": "#30312d", "primary-fixed-dim": "#afd500", "on-tertiary-container": "#626658", "surface-container-lowest": "#0e0f0b", "tertiary-container": "#e1e4d2", "text-muted": "#A7A89F", "on-tertiary-fixed": "#191d12", "error": "#ffb4ab", "surface-canvas": "#282C20", "surface-container": "#1f201c", "tertiary": "#ffffff", "on-surface": "#e4e3dc", "surface-container-low": "#1b1c18", "surface-card-hover": "#50514B", "background": "#131410", "surface-container-highest": "#343531" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.75rem", "margin-desktop": "2.5rem", "space-2xs": "0.25rem", "space-md": "1rem", "margin-mobile": "1rem", "space-3xs": "0.125rem", "space-2xl": "3rem", "space-xl": "2rem", "gutter-mobile": "1rem", "gutter-desktop": "1.5rem", "space-4xl": "6rem", "space-3xl": "4rem", "space-lg": "1.5rem", "space-xs": "0.5rem" }, "fontFamily": { "headline-md": [ "Bodoni Moda" ], "headline-sm": [ "Bodoni Moda" ], "headline-lg-mobile": [ "Bodoni Moda" ], "body-lg": [ "Hanken Grotesk" ], "display-hero": [ "Bodoni Moda" ], "label-sm": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ], "headline-lg": [ "Bodoni Moda" ], "display-hero-mobile": [ "Bodoni Moda" ], "label-md": [ "Hanken Grotesk" ], "label-lg": [ "Hanken Grotesk" ], "body-md": [ "Hanken Grotesk" ] }, "fontSize": { "headline-md": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg-mobile": [ "32px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-hero": [ "72px", { "lineHeight": "76px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "headline-lg": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-hero-mobile": [ "44px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&amp;family=Space+Grotesk:wght@600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"><style id="headline-typography-override" class="">.font-display-hero, .font-headline-lg, .font-headline-md, .font-headline-sm, h1, h2, h3 { font-family: 'Syne', 'Plus Jakarta Sans', sans-serif !important; } .font-display-hero { font-weight: 800 !important; letter-spacing: -0.02em !important; color: #F4F4ED !important; } .font-headline-lg { font-weight: 800 !important; letter-spacing: -0.015em !important; } .font-headline-md, .font-headline-sm { font-weight: 700 !important; letter-spacing: -0.01em !important; } h1 span.italic { font-family: 'Plus Jakarta Sans', sans-serif !important; font-style: italic !important; font-weight: 700 !important; }</style></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 left-0 w-full z-50 bg-surface-deep/95 backdrop-blur-md border-b border-border-subtle"><div class="h-16 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><img alt="India Digital Creatives Wordmark Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UchcAQIGap439D7rxJFjycAM2_HNeUP5PhsEZFb75q2JaR8MNGg44fLDAMCR1uQ8YIURX113t4XGdFjOEZElthgt085f9bKQ4pahfs1zKunJbNm7Mqq-_Xq6HhTCH9oe9XdZoeV9UAxAxjo-8UUG9NnmFcAmRMMcNPSxSMhj_9449j5k2IENuaWcIb_6Ak5VlOT1_UcPAN1jqzL6bVmIjG9wXb4BFuTiSPjdxROVzX8YTSJ1Ui6Q0F6Kw"><span class="font-label-md text-label-md uppercase tracking-wider text-text-editorial hidden sm:inline-block border-l border-border-subtle pl-space-sm">India Digital Creatives</span></div><nav class="hidden xl:flex items-center gap-space-lg h-full" data-active-classes="text-primary-container border-b-2 border-border-active"><a aria-current="page" class="h-full flex items-center font-label-md uppercase tracking-wider transition-colors text-primary-container border-b-2 border-border-active" data-path="shop" href="#">Shop</a><a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-text-muted hover:text-text-editorial transition-colors" data-path="books" href="#">Books</a><a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-text-muted hover:text-text-editorial transition-colors" data-path="ebooks" href="#">Ebooks</a><a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-text-muted hover:text-text-editorial transition-colors" data-path="guides" href="#">Guides</a><a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-text-muted hover:text-text-editorial transition-colors" data-path="templates" href="#">Templates</a><a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-text-muted hover:text-text-editorial transition-colors" data-path="bundles" href="#">Bundles</a><a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-text-muted hover:text-text-editorial transition-colors" data-path="editorial" href="#">Editorial</a></nav><div class="flex items-center gap-space-sm shrink-0"><button aria-label="Search" class="w-9 h-9 flex items-center justify-center text-text-muted hover:text-text-editorial transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><a class="hidden sm:flex items-center gap-space-2xs px-space-xs py-space-2xs font-label-md text-label-md uppercase text-text-muted hover:text-text-editorial transition-colors" data-path="library" href="#"><span class="material-symbols-outlined text-[18px]">shelves</span><span class="">Library</span></a><a class="inline-flex items-center gap-space-2xs px-space-sm py-space-xs bg-surface-card border border-border-subtle hover:border-border-active transition-all" data-path="cart" href="#"><span class="font-label-sm text-label-sm uppercase tracking-wider text-text-editorial">Cart</span><span class="px-1.5 py-0.5 bg-primary-container text-on-primary-fixed font-label-sm text-label-sm font-bold">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full bg-surface-deep overflow-hidden">
+<div class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-container via-surface to-transparent"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop pt-space-3xl pb-space-4xl relative z-10">
+<!-- Top Micro Folio Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pb-space-lg mb-space-xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 bg-primary-container inline-block"></span>
+<span class="font-label-sm text-label-sm text-primary-container tracking-widest uppercase">CATALOG VOL. 04 • DRM-FREE INDEPENDENT PRESS</span>
+</div>
+<div class="font-label-sm text-label-sm text-text-muted tracking-widest uppercase flex items-center gap-space-sm">
+<span class="">CURATED IN NEW DELHI &amp; BANGALORE</span>
+<span class="text-primary-container">•</span>
+<span class="">EST. 2024</span>
+</div>
+</div>
+<!-- Main Asymmetric Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Brutalist Typography Stack -->
+<div class="lg:col-span-7 flex flex-col space-y-space-lg">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-3xs bg-surface-canvas text-primary-container font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span class="">INSTANT TOKEN DISPATCH ON CHECKOUT</span>
+</div>
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-text-editorial uppercase leading-none tracking-tight"><span class="italic font-headline-lg text-primary-container font-normal lowercase tracking-normal"><font color="#f4f4ed" face="Syne, Plus Jakarta Sans, sans-serif"><span style="font-style: normal; letter-spacing: -1.44px; text-transform: uppercase;">Gain knowledge&nbsp;</span></font>worth</span> Keeping.
+          </h1>
+<p class="font-body-lg text-body-lg text-text-muted max-w-xl">
+            Books, ebooks, operational guides and creative design systems engineered to help you master modern craft, launch ventures, and move forward without platform friction.
+          </p>
+<!-- CTAs & Micro Proof -->
+<div class="pt-space-md flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md bg-primary-container text-on-primary-fixed font-label-lg text-label-lg uppercase tracking-wider shadow-lg hover:bg-surface-tint transition-all group" href="#featured-products">
+<span class="">Shop Products</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md bg-transparent text-text-editorial hover:text-primary-container font-label-lg text-label-lg uppercase tracking-wider transition-colors" href="#shop-categories">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span class="">Explore Books</span>
+</a>
+</div>
+<div class="flex flex-wrap items-center gap-space-lg pt-space-md text-text-muted font-label-sm text-label-sm uppercase tracking-wider">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-primary-container text-[16px]">verified</span>
+<span class="">Direct UPI • Cards • NetBanking</span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-primary-container text-[16px]">all_inclusive</span>
+<span class="">Zero Expiry On File Links</span>
+</div>
+</div>
+</div>
+<!-- Right: Editorial Book Mockup Showcase -->
+<div class="lg:col-span-5 relative mt-space-xl lg:mt-0">
+<div class="relative w-full h-[460px] bg-surface-canvas p-space-lg flex items-center justify-center shadow-2xl">
+<!-- Background Ambient Accents -->
+<div class="absolute -top-6 -right-6 w-36 h-36 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Overlapping Editorial Mockup 1 (Main Focal) -->
+<div class="absolute left-6 top-8 w-60 z-20 transition-transform hover:-translate-y-2 duration-300">
+<div class="bg-surface-card p-space-sm shadow-2xl">
+<div class="w-full h-72 bg-surface-container-high relative overflow-hidden flex flex-col justify-between p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-50" data-alt="High contrast editorial minimalist book cover titled The Modern Creatives Handbook in dark olive charcoal and vibrant chartreuse electric lime typography, studio publication aesthetic with crisp sans-serif and high-contrast Bodoni serif fonts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT0YkvK0x7N8pUSvNSCZb8IJXhGprjN27aChJVR81sFW8pSso8t9d8d8fdUWH0mp70YwgB76O738ylw1ulNcJ-_GFuorZh4rDE4Qwm-zVxOyaN8gzHedIV1N7SEpkoPzqkFhwXqXDRCV6D48qjwwLMpXVOM2nmQu111MQKPcz7Y7YojIX_J1BYVyZAQRDVD3XW2Lef4-YrteiDfxOP_8xFd3aO82RZrPatAt00q9kWA7MpmeHjofCQ">
+<div class="relative z-10 flex justify-between items-start">
+<span class="bg-primary-container text-on-primary-fixed font-label-sm text-label-sm uppercase px-1.5 py-0.5">FOLIO #01</span>
+<span class="font-headline-sm text-headline-sm text-text-editorial font-bold">₹299</span>
+</div>
+<div class="relative z-10">
+<p class="font-label-sm text-label-sm uppercase text-text-muted tracking-widest">PUBLICATION</p>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial leading-tight">The Modern Creative's Handbook</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Systems • 194pp</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Overlapping Digital Mockup 2 (Behind Tablet / Card) -->
+<div class="absolute right-4 bottom-6 w-64 z-10 transition-transform hover:-translate-y-2 duration-300">
+<div class="bg-surface-variant p-space-sm shadow-xl">
+<div class="w-full h-72 bg-surface-deep relative overflow-hidden flex flex-col justify-between p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-screen opacity-40" data-alt="Digital tablet mockup displaying a clean Notion dashboard and design system workbook titled System Design for Solopreneurs with dark theme, minimalist tables, and electric lime highlight accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3MHRMZ2WAT6bu3IniFHjhyoOtJAfN5y9TCGYNXDQvtnpocnpIzTZhlBkFrUrnzAzgmz3owwdT9peU0t7HH3QNzz1W9rKpPSBu2LrqIaDMdNhxbo18ePl1VnuejmyoHZtrt1jXYSA0w_2Y7CVSEKaBc4POKZdrzT4Jsy0b8JuksJggM6yuRgNjnJFaPvOpHy8FrKgPfMwmDuqgSJ62PAoNDoKsnHKrJdFmjLeirhjKhv-_y8fmhwEE">
+<div class="relative z-10 flex justify-between items-start">
+<span class="bg-surface-card text-text-editorial font-label-sm text-label-sm uppercase px-1.5 py-0.5">NOTION OS</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">₹199</span>
+</div>
+<div class="relative z-10">
+<p class="font-label-sm text-label-sm uppercase text-text-muted tracking-widest">TOOLKIT</p>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial leading-tight">System Design for Solopreneurs</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Notion • 24 Dashboards</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Stamp Badge -->
+<div class="absolute -bottom-4 -left-4 z-30 bg-surface-deep p-space-sm shadow-2xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[24px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-text-editorial tracking-wider">100% DRM-Free</span>
+<span class="font-label-sm text-label-sm text-text-muted">Instant PDF, ePub &amp; Files</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. VALUE PROPOSITION RIBBON -->
+<section class="w-full bg-surface-canvas py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<div class="flex flex-col space-y-space-xs p-space-md bg-surface-card/40">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Instant Access</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-editorial font-medium">Immediate digital token on checkout.</p>
+<p class="font-body-sm text-body-sm text-text-muted">Download all assets straight from the order confirmation screen &amp; email.</p>
+</div>
+<div class="flex flex-col space-y-space-xs p-space-md bg-surface-card/40">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[20px]">cloud_done</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Digital First</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-editorial font-medium">No waiting. Zero shipping fees.</p>
+<p class="font-body-sm text-body-sm text-text-muted">Read across phone, e-reader, tablet, or workstation without hardware boundaries.</p>
+</div>
+<div class="flex flex-col space-y-space-xs p-space-md bg-surface-card/40">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[20px]">construction</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Practical &amp; Tested</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-editorial font-medium">Useful, not merely ornamental.</p>
+<p class="font-body-sm text-body-sm text-text-muted">Vetted by 4,200+ indie makers, creative directors, and bootstrapped operators.</p>
+</div>
+<div class="flex flex-col space-y-space-xs p-space-md bg-surface-card/40">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[20px]">lock_open_right</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">One-Time Purchase</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-editorial font-medium">Buy once, own forever.</p>
+<p class="font-body-sm text-body-sm text-text-muted">Includes complimentary lifetime revisions and persistent link lookup portal.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. FEATURED PRODUCTS ("START HERE.") -->
+<section class="w-full bg-surface py-space-4xl" id="featured-products">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<!-- Section Header with Category Tabs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-2xl">
+<div>
+<div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm uppercase tracking-widest mb-space-2xs">
+<span class="">CURATED ESSENTIALS</span>
+<span class="">•</span>
+<span class="">01 / 04</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-editorial uppercase">Start Here.</h2>
+<p class="font-body-md text-body-md text-text-muted mt-space-2xs">The publications and toolkits with our highest completion and execution ratings.</p>
+</div>
+<!-- Filter Controls -->
+<div class="flex flex-wrap items-center gap-space-xs" id="product-filter-group">
+<button class="filter-tab active px-space-md py-space-xs bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider" type="button">All Items</button>
+<button class="filter-tab px-space-md py-space-xs bg-surface-card text-text-editorial font-label-md text-label-md uppercase tracking-wider hover:bg-surface-card-hover transition-colors" type="button">Bestsellers</button>
+<button class="filter-tab px-space-md py-space-xs bg-surface-card text-text-editorial font-label-md text-label-md uppercase tracking-wider hover:bg-surface-card-hover transition-colors" type="button">New Drops</button>
+<button class="filter-tab px-space-md py-space-xs bg-surface-card text-text-editorial font-label-md text-label-md uppercase tracking-wider hover:bg-surface-card-hover transition-colors" type="button">Under ₹199</button>
+</div>
+</div>
+<!-- 4 Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- CARD 1 -->
+<article class="bg-surface-card p-space-lg flex flex-col justify-between hover:bg-surface-card-hover hover:-translate-y-1 transition-all duration-200 group">
+<div>
+<!-- Cover Mockup container -->
+<div class="relative w-full aspect-[3/4] bg-surface-canvas overflow-hidden mb-space-md flex flex-col justify-between p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Cover layout of Editorial Systems and Layout Mastery ebook displaying minimalist brutalist gridlines and high-contrast typography, styled like a Swiss design journal on deep olive background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLzm_1CXrgeDxI1P3heh8Az8TYmV2CgQz0KsEBh01L1Iin_-4aDQAdAvUZOKSlruHhT4xnMW4bwWdKxi-cC2To8oSel-MSW24F1vhO28TqsEXo_wSwjQSyCPs1P_Znu3B0qwskCbTkNRKdFdW6Fc-8tq93iPnwFuIwkZmmlX2aAu9s2t7fTmAn8rHF85stysUiV9IMLBcrsMGkeaRCgsRBAh8810PlXx0ytC3lmhbPvxkOyLUl-O7K">
+<div class="relative z-10 flex items-center justify-between">
+<span class="bg-primary-container text-on-primary-fixed font-label-sm text-label-sm font-bold uppercase px-2 py-0.5">Bestseller</span>
+<span class="bg-surface-deep/90 text-text-editorial font-label-sm text-label-sm uppercase px-2 py-0.5">Save 50%</span>
+</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container">EBOOK • PDF (180 PAGES)</span>
+</div>
+</div>
+<!-- Content Details -->
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary-container transition-colors leading-snug">Editorial Systems &amp; Layout Mastery</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-2xs line-clamp-2">The complete blueprint to designing publication-grade digital screens, documents, and books with Swiss grid discipline.</p>
+<div class="flex items-center gap-space-xs mt-space-sm text-text-muted font-body-sm text-body-sm">
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-editorial font-semibold">5.0</span>
+<span class="text-text-muted">(218 reviews)</span>
+</div>
+</div>
+<!-- Price & Purchase Action -->
+<div class="pt-space-md mt-space-md bg-surface-variant/40 p-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-text-editorial font-bold">₹299</span>
+<span class="font-body-sm text-body-sm text-text-muted line-through">₹599</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-primary-container tracking-wider font-semibold">Instant Download</span>
+</div>
+<div class="grid grid-cols-2 gap-space-2xs">
+<button class="buy-now-btn w-full py-space-xs bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider hover:bg-surface-tint font-bold transition-colors" type="button">Buy Now</button>
+<button class="add-cart-btn w-full py-space-xs bg-surface-deep text-text-editorial font-label-md text-label-md uppercase tracking-wider hover:text-primary-container transition-colors" type="button">Add to Cart</button>
+</div>
+</div>
+</article>
+<!-- CARD 2 -->
+<article class="bg-surface-card p-space-lg flex flex-col justify-between hover:bg-surface-card-hover hover:-translate-y-1 transition-all duration-200 group">
+<div>
+<div class="relative w-full aspect-[3/4] bg-surface-canvas overflow-hidden mb-space-md flex flex-col justify-between p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Cover mockup for The Solopreneur Notion Blueprint highlighting workspace templates, databases, and kanban systems in dark theme minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLfT25cuZcg--jnkcFWUlsVp7kTNd-BXifOLS-WxocEAaW2gmvCabV6R2J122W71IS_haGWcc3E5j_1_-7asyZCnqpKIFmsAwwDqCO8rCf0Uw7D7mO5lv_AmWa021NTCkR73-BEYZ1hEhiA23LRQNbZEL89j-JDxIUco81UPmt2nvzInrLwXRxupDMHLD3YE5NM2vhTSj278brmetCC6g2gt-7mPhJaZ4aVDil_Xmtm-ftPF64l1WZ">
+<div class="relative z-10 flex items-center justify-between">
+<span class="bg-surface-deep/90 text-text-editorial font-label-sm text-label-sm font-bold uppercase px-2 py-0.5">Notion OS</span>
+<span class="bg-surface-deep/90 text-primary-container font-label-sm text-label-sm uppercase px-2 py-0.5">Save 50%</span>
+</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container">TEMPLATE • 1-CLICK DUPLICATE</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary-container transition-colors leading-snug">The Solopreneur Notion Blueprint</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-2xs line-clamp-2">Unified digital operating system with CRM, invoicing, project trackers, content calendar, and client delivery vaults.</p>
+<div class="flex items-center gap-space-xs mt-space-sm text-text-muted font-body-sm text-body-sm">
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star_half</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-editorial font-semibold">4.9</span>
+<span class="text-text-muted">(124 reviews)</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-variant/40 p-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-text-editorial font-bold">₹199</span>
+<span class="font-body-sm text-body-sm text-text-muted line-through">₹399</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-text-muted tracking-wider">Notion Template</span>
+</div>
+<div class="grid grid-cols-2 gap-space-2xs">
+<button class="buy-now-btn w-full py-space-xs bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider hover:bg-surface-tint font-bold transition-colors" type="button">Buy Now</button>
+<button class="add-cart-btn w-full py-space-xs bg-surface-deep text-text-editorial font-label-md text-label-md uppercase tracking-wider hover:text-primary-container transition-colors" type="button">Add to Cart</button>
+</div>
+</div>
+</article>
+<!-- CARD 3 -->
+<article class="bg-surface-card p-space-lg flex flex-col justify-between hover:bg-surface-card-hover hover:-translate-y-1 transition-all duration-200 group">
+<div>
+<div class="relative w-full aspect-[3/4] bg-surface-canvas overflow-hidden mb-space-md flex flex-col justify-between p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Cover layout of Typecraft Advanced Typography Guide book with dramatic Bodoni serif characters juxtaposed against strict geometric glyphs on deep charcoal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb-pxd0T7jq_ikFawahfc5jKFHJBNapvnHNZkHuZ5wezvIDe9atARwG94oQGQSvUWEnqGV5PYFe7-XAAWrBrNLBAqthAQ8lETvxl4GukHRry6x4_P727sDq-kBGeIlznfQIeg5nbrNe-vl6e0MbjYIqGPRRJyHsg7MCLvKwmI_cip4OEmiPKGjT7OnVfcKVoAzgncGD0vO-AWXzGLy7CI6TwDdkK_5Y0iC22DcJY-IEL37SrqFqj31">
+<div class="relative z-10 flex items-center justify-between">
+<span class="bg-surface-bright text-text-editorial font-label-sm text-label-sm font-bold uppercase px-2 py-0.5">New Release</span>
+<span class="bg-surface-deep/90 text-text-muted font-label-sm text-label-sm uppercase px-2 py-0.5">Issue 03</span>
+</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container">DIGITAL BOOK • EPUB + PDF</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary-container transition-colors leading-snug">Typecraft: Advanced Typography Guide</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-2xs line-clamp-2">How to build authoritative visual voice through pairing rules, variable type engines, and micro-typographic precision.</p>
+<div class="flex items-center gap-space-xs mt-space-sm text-text-muted font-body-sm text-body-sm">
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-editorial font-semibold">5.0</span>
+<span class="text-text-muted">(89 reviews)</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-variant/40 p-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-text-editorial font-bold">₹349</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-text-muted tracking-wider">Single License</span>
+</div>
+<div class="grid grid-cols-2 gap-space-2xs">
+<button class="buy-now-btn w-full py-space-xs bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider hover:bg-surface-tint font-bold transition-colors" type="button">Buy Now</button>
+<button class="add-cart-btn w-full py-space-xs bg-surface-deep text-text-editorial font-label-md text-label-md uppercase tracking-wider hover:text-primary-container transition-colors" type="button">Add to Cart</button>
+</div>
+</div>
+</article>
+<!-- CARD 4 -->
+<article class="bg-surface-card p-space-lg flex flex-col justify-between hover:bg-surface-card-hover hover:-translate-y-1 transition-all duration-200 group">
+<div>
+<div class="relative w-full aspect-[3/4] bg-surface-canvas overflow-hidden mb-space-md flex flex-col justify-between p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Cover layout for Ultimate Creator Growth Toolkit bundle displaying 4 bundled publications and 12 template icons with sleek editorial packaging in dark olive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwkQnzil9YTFOFJN26fPCDq3CHgkcigEevPPZbTeRhp7KDmMawPgb7adxP-f6y-upmJsOUrolx7SWTvpiNSXAvFMvw41fNIZO5Y_m6lqpNvSGUetIgTGiTa3QAQ19IpywaybQb3gwfXdC4NY0yqhCVGcXk4v2vACH1FlkERrhe49iTY5O5V5ujKTuwSVBB3ZASq8q5kDryb3Xuk0p_N0lAhX-jbfpXoC2rD-9WN89asd7wJFdeuRre">
+<div class="relative z-10 flex items-center justify-between">
+<span class="bg-primary-container text-on-primary-fixed font-label-sm text-label-sm font-bold uppercase px-2 py-0.5">Bundle Pack</span>
+<span class="bg-surface-deep/90 text-primary-container font-label-sm text-label-sm uppercase px-2 py-0.5">Save 60%</span>
+</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container">4 GUIDES • 12 TEMPLATES</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary-container transition-colors leading-snug">Ultimate Creator Growth Toolkit</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-2xs line-clamp-2">Complete execution stack: distribution playbook, email nurture frameworks, high-converting product pages, and metrics dashboard.</p>
+<div class="flex items-center gap-space-xs mt-space-sm text-text-muted font-body-sm text-body-sm">
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-editorial font-semibold">4.9</span>
+<span class="text-text-muted">(412 reviews)</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-variant/40 p-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-headline-sm text-headline-sm text-text-editorial font-bold">₹599</span>
+<span class="font-body-sm text-body-sm text-text-muted line-through">₹1,499</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-primary-container tracking-wider font-semibold">Full Stack</span>
+</div>
+<div class="grid grid-cols-2 gap-space-2xs">
+<button class="buy-now-btn w-full py-space-xs bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider hover:bg-surface-tint font-bold transition-colors" type="button">Buy Now</button>
+<button class="add-cart-btn w-full py-space-xs bg-surface-deep text-text-editorial font-label-md text-label-md uppercase tracking-wider hover:text-primary-container transition-colors" type="button">Add to Cart</button>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 4. CATEGORY BLOCKS (SHOP BY CATEGORY) -->
+<section class="w-full bg-surface-deep py-space-4xl" id="shop-categories">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div>
+<div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm uppercase tracking-widest mb-space-2xs">
+<span class="">INDEX • TAXONOMY</span>
+<span class="">•</span>
+<span class="">02 / 04</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-editorial uppercase">Shop By Category.</h2>
+</div>
+<p class="font-body-md text-body-md text-text-muted max-w-md">Browse our entire studio inventory structured by medium and practical execution outcome.</p>
+</div>
+<!-- 5 Split Editorial Category Panels -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-md">
+<!-- Category 1: Books (Large Span) -->
+<a class="lg:col-span-7 bg-surface-card p-space-xl flex flex-col justify-between hover:bg-surface-card-hover group transition-all duration-200" href="#">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">CATEGORY 01</span>
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary-container group-hover:translate-x-1 transition-all">arrow_outward</span>
+</div>
+<div class="my-space-xl">
+<h3 class="font-headline-lg text-headline-lg text-text-editorial uppercase group-hover:text-primary-container transition-colors">Books</h3>
+<p class="font-body-lg text-body-lg text-text-muted mt-space-xs max-w-lg">Long-form treatises, visual dissertations, and bound monographs for serious practitioners who prize depth over quick trends.</p>
+</div>
+<div class="flex items-center justify-between pt-space-md bg-surface-canvas/50 px-space-md py-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-editorial">18 Titles Available</span>
+<span class="font-label-sm text-label-sm uppercase text-primary-container">Browse Monograph Shelf →</span>
+</div>
+</a>
+<!-- Category 2: Ebooks -->
+<a class="lg:col-span-5 bg-surface-card p-space-xl flex flex-col justify-between hover:bg-surface-card-hover group transition-all duration-200" href="#">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">CATEGORY 02</span>
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary-container group-hover:translate-x-1 transition-all">arrow_outward</span>
+</div>
+<div class="my-space-xl">
+<h3 class="font-headline-lg text-headline-lg text-text-editorial uppercase group-hover:text-primary-container transition-colors">Ebooks</h3>
+<p class="font-body-md text-body-md text-text-muted mt-space-xs">Instant knowledge. Download in dual formats (reflowable ePub &amp; fixed precision PDF) and begin reading immediately.</p>
+</div>
+<div class="flex items-center justify-between pt-space-md bg-surface-canvas/50 px-space-md py-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-editorial">24 Titles Available</span>
+<span class="font-label-sm text-label-sm uppercase text-primary-container">Instant Download →</span>
+</div>
+</a>
+<!-- Category 3: Guides -->
+<a class="lg:col-span-4 bg-surface-card p-space-xl flex flex-col justify-between hover:bg-surface-card-hover group transition-all duration-200" href="#">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">CATEGORY 03</span>
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary-container group-hover:translate-x-1 transition-all">arrow_outward</span>
+</div>
+<div class="my-space-lg">
+<h3 class="font-headline-md text-headline-md text-text-editorial uppercase group-hover:text-primary-container transition-colors">Guides</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-xs">Step-by-step SOPs, launch checklists, and operational workflows designed to be executed, not just shelved.</p>
+</div>
+<div class="flex items-center justify-between bg-surface-canvas/50 px-space-md py-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-editorial">15 Guides</span>
+<span class="font-label-sm text-label-sm uppercase text-primary-container">→</span>
+</div>
+</a>
+<!-- Category 4: Templates -->
+<a class="lg:col-span-4 bg-surface-card p-space-xl flex flex-col justify-between hover:bg-surface-card-hover group transition-all duration-200" href="#">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">CATEGORY 04</span>
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary-container group-hover:translate-x-1 transition-all">arrow_outward</span>
+</div>
+<div class="my-space-lg">
+<h3 class="font-headline-md text-headline-md text-text-editorial uppercase group-hover:text-primary-container transition-colors">Templates</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-xs">Production-ready Figma UI kits, Notion databases, contract agreements, and deck presentations that save tens of hours.</p>
+</div>
+<div class="flex items-center justify-between bg-surface-canvas/50 px-space-md py-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-editorial">32 Templates</span>
+<span class="font-label-sm text-label-sm uppercase text-primary-container">→</span>
+</div>
+</a>
+<!-- Category 5: Bundles -->
+<a class="lg:col-span-4 bg-surface-canvas p-space-xl flex flex-col justify-between hover:bg-surface-card-hover group transition-all duration-200" href="#">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">CATEGORY 05</span>
+<span class="material-symbols-outlined text-primary-container group-hover:translate-x-1 transition-all">arrow_outward</span>
+</div>
+<div class="my-space-lg">
+<h3 class="font-headline-md text-headline-md text-text-editorial uppercase group-hover:text-primary-container transition-colors">Bundles</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-xs">Maximum economy. Synergistic resource combinations packaged with up to 65% total discount in one single checkout.</p>
+</div>
+<div class="flex items-center justify-between bg-surface-deep px-space-md py-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-container font-semibold">8 Bundles</span>
+<span class="font-label-sm text-label-sm uppercase text-primary-container">Best Value →</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. BESTSELLER CAROUSEL / HIGHLIGHT ("THE ONES PEOPLE KEEP.") -->
+<section class="w-full bg-surface py-space-4xl relative overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
+<div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm uppercase tracking-widest mb-space-sm">
+<span class="">SPOTLIGHT PUBLICATION</span>
+<span class="">•</span>
+<span class="">03 / 04</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-editorial uppercase mb-space-2xl">The Ones People Keep.</h2>
+<!-- Dramatic Spotlight Panel -->
+<div class="bg-surface-canvas p-space-xl lg:p-space-3xl shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left: Book Visual with Hard Elevation -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative w-full max-w-sm aspect-[3/4] bg-surface-card p-space-md shadow-2xl">
+<div class="w-full h-full bg-surface-deep relative flex flex-col justify-between p-space-xl overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="Cover of Digital Minimalism for Builders by IDC Studio in high contrast black, ivory and chartreuse lime typography with clean architectural composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD2Nl4E0_qH7UF-zTet1fN-TJMeffLNIbfjDQrn6HHgQjxHYP6kLJwP0Fg1odrBkEaIL8iILpZZ71SCTEsNkjsuK4lYUTlEqB4dtIZe9XVtVeiKa7C6ZjXEQWxs_-hikaSIWZDhfsaCbGPzGXelFuh6HZQsj66epUI_DWUbzSq8Mxcz5LvQuKS1OdY3E2PUKvtHsZghMyLlwKi5X_NYP_hJhxZBta1TL7_1mVBGkafRfYyHdrSEN2m">
+<div class="relative z-10 flex justify-between items-start">
+<span class="bg-primary-container text-on-primary-fixed font-label-sm text-label-sm font-bold uppercase px-2 py-0.5">#1 IDC BESTSELLER</span>
+<span class="font-label-md text-label-md text-text-editorial">2nd Edition</span>
+</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase text-text-muted tracking-widest">MONOGRAPH • 240 PAGES</span>
+<h3 class="font-headline-md text-headline-md text-text-editorial uppercase leading-tight mt-1">Digital Minimalism for Builders</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-2">By India Digital Creatives Studio</p>
+</div>
+</div>
+<div class="absolute -top-3 -right-3 bg-primary-container text-on-primary-fixed p-space-xs font-label-sm text-label-sm font-bold uppercase">
+                4,280+ Copies Owned
+              </div>
+</div>
+</div>
+<!-- Right: Critical Acclaim, Meta & 1-Click Purchase -->
+<div class="lg:col-span-7 flex flex-col space-y-space-lg">
+<div class="inline-flex items-center gap-space-xs text-text-muted font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-primary-container text-[18px]">verified</span>
+<span class="">CERTIFIED EDITORIAL EDITION • DRM-FREE ARCHIVAL BUNDLE</span>
+</div>
+<blockquote class="font-headline-md text-headline-md text-text-editorial italic leading-tight">
+              “The most practical creative business handbook published in India. No VC fluff, no generic jargon — just raw, executable blueprints for sustainable independent software and digital publishing.”
+            </blockquote>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-card flex items-center justify-center font-bold text-primary-container font-label-md">
+                AK
+              </div>
+<div>
+<p class="font-label-md text-label-md text-text-editorial uppercase">Arjun Krishnamurthy</p>
+<p class="font-body-sm text-body-sm text-text-muted">Founder, Studio Syntax &amp; Independent Publisher</p>
+</div>
+</div>
+<!-- Specs hairline metadata table -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md py-space-md bg-surface-deep/70 p-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-text-muted uppercase block">Format</span>
+<span class="font-label-md text-label-md text-text-editorial uppercase mt-1 block">PDF + EPUB + MOBI</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-text-muted uppercase block">Includes</span>
+<span class="font-label-md text-label-md text-text-editorial uppercase mt-1 block">8 Notion Sheets</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-text-muted uppercase block">Delivery</span>
+<span class="font-label-md text-label-md text-primary-container uppercase mt-1 block">Instant Direct</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-text-muted uppercase block">License</span>
+<span class="font-label-md text-label-md text-text-editorial uppercase mt-1 block">Perpetual Personal</span>
+</div>
+</div>
+<!-- Buy Action -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-[38px] leading-none text-text-editorial font-bold">₹399</span>
+<span class="font-body-md text-body-md text-text-muted line-through">₹799</span>
+<span class="bg-primary-container text-on-primary-fixed font-label-sm text-label-sm uppercase font-bold px-1.5 py-0.5 ml-1">50% OFF</span>
+</div>
+<button class="buy-now-btn flex-1 py-space-md px-space-xl bg-primary-container text-on-primary-fixed font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-tint font-bold transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="">Instant 1-Click Purchase</span>
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. FROM THE EDITORIAL DESK -->
+<section class="w-full bg-surface-deep py-space-4xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div>
+<div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm uppercase tracking-widest mb-space-2xs">
+<span class="">DISPATCHES &amp; ESSAYS</span>
+<span class="">•</span>
+<span class="">04 / 04</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-editorial uppercase">From the Editorial Desk.</h2>
+</div>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary-container hover:text-text-editorial transition-colors flex items-center gap-space-2xs" href="#">
+<span class="">Read All Studio Essays</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 3 Publication Articles -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
+<!-- Article 1 -->
+<article class="bg-surface-card p-space-lg flex flex-col justify-between hover:bg-surface-card-hover transition-colors group">
+<div>
+<div class="w-full aspect-[16/9] bg-surface-canvas overflow-hidden mb-space-md relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-80" data-alt="Minimalist monochromatic photo of a sleek digital workstation with printed typographical books and warm ambient reading desk lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABhXcfx8sv6CB5yKXw_NdbWRDvDdM0qunuPYYUGgjF4iapNlUdvIXtgt4wFagmENSgLGsYXB2wzg0azm1fbbbadW5RicjtAKTzMcgC4QIDgCRaF6jto4Ivc4NxaObHMDxKAFiCTKQymHFoP9UmKerMYKqY0dURRycsrfibHJQuZJlegX7TssHaWs8T_1ZFf5O6Db4GhuL07ZFPII84PxK159Foln5I8WkAMkcReyOnbigo69ELVeFr">
+</div>
+<div class="flex items-center justify-between text-text-muted font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+<span class="text-primary-container">PHILOSOPHY</span>
+<span class="">6 MIN READ • OCT 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary-container transition-colors leading-tight">Why We Switched to 100% DRM-Free Digital Books</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-xs">The case against closed proprietary reader silos, recurring platform licenses, and why digital preservation belongs to the reader.</p>
+</div>
+<div class="pt-space-md mt-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-text-editorial group-hover:text-primary-container flex items-center gap-space-2xs">
+<span class="">Read Essay</span>
+<span class="">→</span>
+</span>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-surface-card p-space-lg flex flex-col justify-between hover:bg-surface-card-hover transition-colors group">
+<div>
+<div class="w-full aspect-[16/9] bg-surface-canvas overflow-hidden mb-space-md relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-80" data-alt="High contrast macro close up of precision architectural grid sketches, UI design systems layout, and digital design tokens on matte dark paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5-lG3Cs_CnvnS--nyrPwIK0tFx5xfvH7bMqqYf6eVy_Fn25XhEM_AuwABJa6VLK0TJIGQo9YJ9E_JBw5JQ40khuV-Ff0nFJd5CKB2PbDH6_QQJ2RpytWeYQy6owKQw7ftAVRLC5CO_mnndIhah36fvXa7twNhjNCYRPzoydsfQpx1Qkde0kFHOk51oyXbzmw23rv_eRB1iS9EYzxpXDdmXsNuCR2l9kaM0fvNLMYvuS2DpvMLrhE6">
+</div>
+<div class="flex items-center justify-between text-text-muted font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+<span class="text-primary-container">CRAFT • SYSTEMS</span>
+<span class="">8 MIN READ • NOV 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary-container transition-colors leading-tight">Designing High-Speed Digital Toolkits for Indie Studios</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-xs">How stripped-back, purpose-built templates out-perform heavy SaaS software stacks for solopreneurs and compact creative agencies.</p>
+</div>
+<div class="pt-space-md mt-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-text-editorial group-hover:text-primary-container flex items-center gap-space-2xs">
+<span class="">Read Essay</span>
+<span class="">→</span>
+</span>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-surface-card p-space-lg flex flex-col justify-between hover:bg-surface-card-hover transition-colors group">
+<div>
+<div class="w-full aspect-[16/9] bg-surface-canvas overflow-hidden mb-space-md relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-80" data-alt="Editorial graphic representing indie internet business metrics, digital commerce graphs in electric lime line work on deep olive canvas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkUjfDZiDpfugGoq26tMiCHZc7H7lX78MTPfDf9wxKzW-gaiXRT5xQ_XsITtDirnlCVQtPt_Wd47Ds30lRWVsn-hUWINUBX-9-zhH-nz1Uf9q4N0ZOEfk8i5o4mMeHpb7IbXXvZORhcmF12s5J9YNA-6sspMuu8yNCwtoo5Cruj3VhDBLp81s2RZXCtKGgVGNzq-6i8jqiufDAwHW6r4PpuD3dU0UGCY7sfYHRn_y1ZevBC5XBczaC">
+</div>
+<div class="flex items-center justify-between text-text-muted font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+<span class="text-primary-container">ECONOMICS</span>
+<span class="">11 MIN READ • DEC 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-editorial group-hover:text-primary-container transition-colors leading-tight">The Economics of Digital Independence in India</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-xs">Analyzing direct consumer micropayments via UPI, self-hosted distribution, and high-margin knowledge publishing in the subcontinent.</p>
+</div>
+<div class="pt-space-md mt-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-text-editorial group-hover:text-primary-container flex items-center gap-space-2xs">
+<span class="">Read Essay</span>
+<span class="">→</span>
+</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 7. PROMINENT TRUST & CONVERSION BANNER -->
+<section class="w-full bg-surface-canvas py-space-3xl relative">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="bg-surface-deep p-space-xl lg:p-space-2xl shadow-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-8 flex flex-col space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="">ZERO WAIT POLICY • INSTANT DISPATCH</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-editorial uppercase leading-tight">
+              Instant download tokens issued within 3 seconds of payment.
+            </h3>
+<p class="font-body-sm text-body-sm text-text-muted max-w-2xl">
+              Pay securely via UPI (Google Pay, PhonePe, Paytm), All Major Debit/Credit Cards, or NetBanking through our encrypted payment gateway. Your persistent digital library link is generated immediately on-screen and mirrored to your inbox.
+            </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-center">
+<a class="w-full py-space-md px-space-lg bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider font-bold text-center hover:bg-surface-tint transition-colors flex items-center justify-center gap-space-xs" href="#featured-products">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span class="">Browse Digital Storefront</span>
+</a>
+<div class="flex items-center justify-center gap-space-md text-text-muted font-label-sm text-label-sm uppercase tracking-wider py-space-2xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary-container">lock</span> 256-Bit SSL</span>
+<span class="">•</span>
+<span class="">UPI Verified</span>
+<span class="">•</span>
+<span class="">Zero DRM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Quick Toast / Modal Cart Notification Element -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-surface-deep p-space-md shadow-2xl flex items-center gap-space-md max-w-sm" id="quick-cart-toast">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-bold shrink-0">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex-1">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container font-bold">Cart Updated</p>
+<p class="font-body-sm text-body-sm text-text-editorial truncate" id="toast-title">Product added to library basket.</p>
+</div>
+</div>
+<script>
+    (function() {
+      // Category Tab Interaction
+      const tabs = document.querySelectorAll('#product-filter-group .filter-tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('bg-primary-container', 'text-on-primary-fixed');
+            t.classList.add('bg-surface-card', 'text-text-editorial');
+          });
+          tab.classList.remove('bg-surface-card', 'text-text-editorial');
+          tab.classList.add('bg-primary-container', 'text-on-primary-fixed');
+        });
+      });
+
+      // Cart micro-interaction
+      const toast = document.getElementById('quick-cart-toast');
+      const toastTitle = document.getElementById('toast-title');
+      let toastTimer = null;
+
+      function showToast(title) {
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTitle.textContent = title;
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+
+        toastTimer = setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 2800);
+      }
+
+      document.querySelectorAll('.add-cart-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.target.closest('article');
+          const title = card ? card.querySelector('h3').textContent : 'Publication';
+          showToast('Added "' + title + '" to cart');
+        });
+      });
+
+      document.querySelectorAll('.buy-now-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.target.closest('article');
+          const title = card ? card.querySelector('h3').textContent : 'Digital Product';
+          showToast('Preparing direct checkout for "' + title + '"...');
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-deep border-t border-border-subtle"><div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop py-space-3xl"><div class="border-b border-border-subtle pb-space-2xl mb-space-2xl"><h2 class="font-display-hero text-display-hero-mobile md:text-display-hero text-text-editorial uppercase leading-none tracking-tight">INDIA DIGITAL CREATIVES</h2><p class="font-headline-sm text-headline-sm text-text-muted mt-space-sm italic">Ideas worth keeping. Knowledge worth owning.</p></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl border-b border-border-subtle pb-space-3xl mb-space-2xl"><div class="lg:col-span-3"><h3 class="font-label-md text-label-md uppercase text-primary-container tracking-wider mb-space-md">Shop</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-text-muted"><li class="hover:text-text-editorial transition-colors"><a data-path="books" href="#" class="">Books</a></li><li class="hover:text-text-editorial transition-colors"><a data-path="ebooks" href="#" class="">Ebooks</a></li><li class="hover:text-text-editorial transition-colors"><a data-path="guides" href="#" class="">Guides</a></li><li class="hover:text-text-editorial transition-colors"><a data-path="templates" href="#" class="">Templates</a></li><li class="hover:text-text-editorial transition-colors"><a data-path="bundles" href="#" class="">Bundles</a></li></ul></div><div class="lg:col-span-3"><h3 class="font-label-md text-label-md uppercase text-primary-container tracking-wider mb-space-md">Company</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-text-muted"><li class="hover:text-text-editorial transition-colors"><a data-path="about-idc" href="#" class="">About IDC</a></li><li class="hover:text-text-editorial transition-colors"><a data-path="editorial" href="#" class="">Editorial Desk</a></li><li class="hover:text-text-editorial transition-colors"><a data-path="contact" href="#" class="">Contact</a></li></ul></div><div class="lg:col-span-3"><h3 class="font-label-md text-label-md uppercase text-primary-container tracking-wider mb-space-md">Customer Care</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-text-muted"><li class="hover:text-text-editorial transition-colors"><a data-path="token-lookup" href="#" class="">Instant Download Token Lookup</a></li><li class="hover:text-text-editorial transition-colors"><a data-path="refund-policy" href="#" class="">Refund Policy</a></li><li class="hover:text-text-editorial transition-colors"><a data-path="faq" href="#" class="">FAQ</a></li><li class="hover:text-text-editorial transition-colors"><a data-path="license-terms" href="#" class="">License Terms</a></li></ul></div><div class="lg:col-span-3"><h3 class="font-label-md text-label-md uppercase text-text-editorial tracking-wider mb-space-xs">GET THE GOOD STUFF</h3><p class="font-body-sm text-body-sm text-text-muted mb-space-md">Curated releases, design dissertations, and studio drops.</p><form class="flex flex-col gap-space-xs"><input class="w-full bg-surface-canvas border border-border-subtle px-space-sm py-space-xs font-body-sm text-body-sm text-text-editorial placeholder:text-text-muted focus:outline-none focus:border-border-active" placeholder="Your direct email" type="email"><button class="w-full bg-primary-container text-on-primary-fixed font-label-lg text-label-lg uppercase tracking-wider py-space-xs font-bold hover:bg-surface-tint transition-colors flex items-center justify-center gap-space-2xs" type="submit"><span class="">SUBSCRIBE</span><span class="">→</span></button></form></div></div><div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md font-label-sm text-label-sm uppercase tracking-wider text-text-muted"><div class="flex flex-wrap items-center gap-space-xs text-text-muted"><span class="">Instant digital delivery</span><span class="">•</span><span class="">Protected download links</span><span class="">•</span><span class="">No physical shipping required</span></div><div class="">© 2025 India Digital Creatives. All rights reserved.</div></div></div></footer>
+
+</body></html>

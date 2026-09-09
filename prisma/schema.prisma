@@ -1,0 +1,159 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// NextAuth Models
+
+model Account {
+  id                 String  @id @default(cuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?  @db.Text
+  access_token       String?  @db.Text
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?  @db.Text
+  session_state      String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  role          Role      @default(CUSTOMER)
+  
+  accounts      Account[]
+  sessions      Session[]
+  orders        Order[]
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+enum Role {
+  CUSTOMER
+  ADMIN
+}
+
+// Storefront Models
+
+model Product {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  description String?  @db.Text
+  price       Float
+  formats     Json?    // e.g. ["PDF", "EPUB", "Notion"]
+  coverImage    String?
+  galleryImages String[]
+  hostedLink    String?  // Secure URL to primary file
+  hostedLinks   String[] // Additional bundle files
+  category      String?
+  subcategory   String?
+  labels        String[] // Tags like "Bestseller", "New"
+  
+  // Dynamic Content Fields
+  faqs          Json?    // Array of { question, answer }
+  spreadImages  Json?    // Array of { tabName, images: [] }
+  deliverables  Json?    // Array of { title, description, formatText, icon, image }
+  personas      Json?    // Array of { title, description, focus, icon }
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  orderItems  OrderItem[]
+  reviews     Review[]
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  productId String
+  rating    Int
+  author    String
+  role      String?
+  content   String   @db.Text
+  createdAt DateTime @default(now())
+  
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
+
+model Order {
+  id          String   @id @default(cuid())
+  userId      String?
+  customerEmail String?
+  customerPhone String?
+  customerName  String?
+  totalAmount Float
+  status      OrderStatus @default(PENDING)
+  
+  user        User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  transactions Transaction[]
+  orderItems  OrderItem[]
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Transaction {
+  id               String   @id @default(cuid())
+  orderId          String
+  cashfreeOrderId  String?  @unique
+  paymentSessionId String?  @unique
+  status           PaymentStatus @default(PENDING)
+  paymentMethod    String?
+  amount           Float
+  
+  order            Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  
+  createdAt        DateTime @default(now())
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  productId String
+  price     Float
+  
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  FAILED
+}
+
+enum PaymentStatus {
+  PENDING
+  SUCCESS
+  FAILED
+  USER_DROPPED
+}
