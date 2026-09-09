@@ -5,6 +5,7 @@ import { useEffect, useState, Suspense } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+// @ts-ignore
 import { load } from "@cashfreepayments/cashfree-js";
 
 function RetryContent() {

@@ -27,16 +27,14 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-surface-deep/95 backdrop-blur-md border-b border-border-subtle">
       <div className="h-16 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md">
-        <div className="flex items-center gap-space-sm shrink-0">
-          <img
-            alt="India Digital Creatives Wordmark Logo"
-            className="h-8 w-auto object-contain"
-            src="https://lh3.googleusercontent.com/aida/AEtjO1UchcAQIGap439D7rxJFjycAM2_HNeUP5PhsEZFb75q2JaR8MNGg44fLDAMCR1uQ8YIURX113t4XGdFjOEZElthgt085f9bKQ4pahfs1zKunJbNm7Mqq-_Xq6HhTCH9oe9XdZoeV9UAxAxjo-8UUG9NnmFcAmRMMcNPSxSMhj_9449j5k2IENuaWcIb_6Ak5VlOT1_UcPAN1jqzL6bVmIjG9wXb4BFuTiSPjdxROVzX8YTSJ1Ui6Q0F6Kw"
-          />
-          <span className="font-label-md text-label-md uppercase tracking-wider text-text-editorial hidden sm:inline-block border-l border-border-subtle pl-space-sm">
-            India Digital Creatives
+        <Link href="/" className="flex items-center gap-space-sm shrink-0 group">
+          <div className="w-8 h-8 rounded bg-surface-tint text-on-primary flex items-center justify-center font-label-md font-bold text-label-md tracking-wider transition-transform group-hover:rotate-3 shadow-md">
+            IDC
+          </div>
+          <span className="font-headline-sm text-[18px] uppercase tracking-wider text-text-editorial hidden sm:inline-block">
+            India Digital <span className="text-surface-tint">Creatives</span>
           </span>
-        </div>
+        </Link>
         <nav
           className="hidden xl:flex items-center gap-space-lg h-full"
         >

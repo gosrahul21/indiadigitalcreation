@@ -42,7 +42,7 @@ export default async function AdminProducts() {
                   </td>
                 </tr>
               ) : (
-                products.map((product) => (
+                products.map((product: any) => (
                   <tr key={product.id} className="hover:bg-surface-card/50 transition-colors">
                     <td className="p-space-md">
                       <div className="flex items-center gap-space-sm">

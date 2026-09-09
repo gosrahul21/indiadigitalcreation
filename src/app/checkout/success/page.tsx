@@ -7,6 +7,7 @@ import Link from "next/link";
 
 interface ProductAsset {
   id: string;
+  slug: string;
   title: string;
   coverImage?: string;
   hostedLink?: string;

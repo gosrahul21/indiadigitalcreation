@@ -35,7 +35,7 @@ export async function GET(req: Request) {
       });
       
       if (order && order.status === 'PAID') {
-        const hasProduct = order.orderItems.some(item => item.productId === productId);
+        const hasProduct = order.orderItems.some((item: any) => item.productId === productId);
         if (hasProduct) {
           hasAccess = true;
         }

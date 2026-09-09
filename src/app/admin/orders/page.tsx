@@ -64,7 +64,7 @@ export default async function AdminOrdersPage() {
                   </td>
                   <td className="p-space-sm text-center">
                     <span className={`inline-flex px-2 py-1 font-label-sm text-[10px] uppercase tracking-widest ${
-                      order.status === 'COMPLETED' ? 'bg-[#E6F4EA] text-[#137333] border border-[#137333]/20' : 
+                      order.status === 'PAID' ? 'bg-[#E6F4EA] text-[#137333] border border-[#137333]/20' : 
                       order.status === 'PENDING' ? 'bg-[#FFF8E1] text-[#F57F17] border border-[#F57F17]/20' : 
                       'bg-surface-variant text-text-muted border border-border-active'
                     }`}>

@@ -65,7 +65,7 @@ export default async function InvoicePage({ params }: { params: Promise<{ id: st
             <p className="font-label-sm uppercase tracking-wider text-text-muted mb-space-xs border-b border-border-subtle pb-1 inline-block">Billed To</p>
             <p className="font-body-md font-bold mt-space-xs">{user.name || "Customer"}</p>
             <p className="font-body-md text-text-muted">{user.email}</p>
-            {order.phone && <p className="font-body-md text-text-muted">{order.phone}</p>}
+            {order.customerPhone && <p className="font-body-md text-text-muted">{order.customerPhone}</p>}
           </div>
           <div>
             <p className="font-label-sm uppercase tracking-wider text-text-muted mb-space-xs border-b border-border-subtle pb-1 inline-block">Issued By</p>
@@ -86,7 +86,7 @@ export default async function InvoicePage({ params }: { params: Promise<{ id: st
               </tr>
             </thead>
             <tbody>
-              {order.orderItems.map((item) => (
+              {order.orderItems.map((item: any) => (
                 <tr key={item.id} className="border-b border-border-subtle">
                   <td className="py-space-md">
                     <p className="font-body-md font-medium">{item.product.title}</p>

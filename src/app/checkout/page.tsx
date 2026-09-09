@@ -1,5 +1,6 @@
 "use client";
 import { useSession, signIn } from "next-auth/react";
+// @ts-ignore
 import { load } from "@cashfreepayments/cashfree-js";
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";

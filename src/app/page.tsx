@@ -141,7 +141,7 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
                 </div>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
-                  {products.map((product) => {
+                  {products.map((product: any) => {
                     const coverImg = product.coverImage || (product.galleryImages && product.galleryImages[0]) || 'https://via.placeholder.com/400x600?text=No+Cover';
                     return (
                       <Link href={`/products/${product.slug}`} key={product.id} className="bg-surface-card p-space-lg flex flex-col justify-between hover:bg-surface-card-hover hover:-translate-y-1 transition-all duration-200 group border border-border-subtle hover:border-primary/30 shadow-sm hover:shadow-xl">

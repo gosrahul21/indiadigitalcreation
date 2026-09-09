@@ -92,7 +92,7 @@ export default function StickyBuyBar({ product }: StickyBuyBarProps) {
       <div className="sticky bottom-0 z-40 w-full bg-surface-deep/95 backdrop-blur-md py-space-sm shadow-2xl">
         {/* Timer Banner (Absolute on top of bar on mobile, inline on desktop) */}
         {timeLeft !== null && timeLeft > 0 && (
-          <div className="absolute -top-8 left-0 w-full bg-error text-on-error py-1 px-4 text-center font-mono text-[11px] uppercase tracking-widest flex items-center justify-center gap-2">
+          <div className="absolute -top-8 left-0 w-full py-1 px-4 text-center font-mono text-[11px] uppercase tracking-widest flex items-center justify-center gap-2" style={{backgroundColor: '#FF6B35', color: '#ffffff'}}>
             <span className="material-symbols-outlined text-[14px]">timer</span>
             Offer expires in: <span className="font-bold text-[13px]">{formatTime(timeLeft)}</span>
           </div>
