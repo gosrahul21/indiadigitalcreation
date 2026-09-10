@@ -46,7 +46,8 @@ export async function POST(req: Request) {
           customer_email: dbOrder.customerEmail || 'customer@example.com'
         },
         order_meta: {
-          return_url: `${baseUrl}/checkout/success?order_id=${dbOrder.id}`
+          return_url: `${baseUrl}/checkout/success?order_id=${dbOrder.id}`,
+          notify_url: `${baseUrl}/api/webhooks/cashfree`
         },
         order_amount: dbOrder.totalAmount || 299.00,
         order_currency: 'INR'
