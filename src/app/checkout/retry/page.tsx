@@ -29,7 +29,8 @@ function RetryContent() {
       const data = await res.json();
       
       if (data.payment_session_id) {
-        const cashfree = await load({ mode: "sandbox" });
+        const mode = process.env.NEXT_PUBLIC_CASHFREE_ENV || (process.env.NODE_ENV === "production" ? "production" : "sandbox");
+        const cashfree = await load({ mode: mode as any });
         cashfree.checkout({ paymentSessionId: data.payment_session_id });
       } else {
         setError("Failed to initialize retry session. Please try again.");

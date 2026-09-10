@@ -79,7 +79,8 @@ function CheckoutContent() {
       });
       const data = await res.json();
       if (data.payment_session_id) {
-        const cashfree = await load({ mode: "sandbox" });
+        const mode = process.env.NEXT_PUBLIC_CASHFREE_ENV || (process.env.NODE_ENV === "production" ? "production" : "sandbox");
+        const cashfree = await load({ mode: mode as any });
         cashfree.checkout({ paymentSessionId: data.payment_session_id });
       } else {
         alert("Payment initialization failed");
@@ -295,11 +296,11 @@ function CheckoutContent() {
                 <span>Included</span>
               </div>
               <div className="pt-space-xs border-t border-border-subtle flex justify-between items-baseline">
-                <div className="flex flex-col">
+                <div className="flex flex-col shrink-0">
                   <span className="font-label-lg text-label-lg uppercase text-text-editorial font-bold">Total</span>
                   <span className="font-label-sm text-[10px] uppercase text-text-muted">Payable (INR)</span>
                 </div>
-                <span className="font-display-hero text-headline-lg text-surface-tint font-bold">₹{price}</span>
+                <span className="font-display-hero text-headline-md md:text-headline-lg lg:text-display-hero-mobile text-surface-tint font-bold shrink overflow-hidden text-ellipsis text-right leading-none">₹{price}</span>
               </div>
             </div>
           </div>

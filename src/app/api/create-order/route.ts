@@ -78,7 +78,8 @@ export async function POST(req: Request) {
       })
     };
 
-    const apiUrl = process.env.CASHFREE_API_URL || 'https://sandbox.cashfree.com/pg';
+    const defaultApiUrl = process.env.NODE_ENV === 'production' ? 'https://api.cashfree.com/pg' : 'https://sandbox.cashfree.com/pg';
+    const apiUrl = process.env.CASHFREE_API_URL || defaultApiUrl;
     const response = await fetch(`${apiUrl}/orders`, options);
     
     if (!response.ok) {
