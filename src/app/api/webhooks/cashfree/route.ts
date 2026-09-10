@@ -53,6 +53,19 @@ export async function POST(req: Request) {
           }
         });
       }
+    } else if (payload.type === 'PAYMENT_FAILED_WEBHOOK' || payload.type === 'USER_DROPPED_WEBHOOK') {
+      console.log(`Received ${payload.type} for order:`, payload.data?.order?.order_id);
+      const rawOrderId = payload.data?.order?.order_id;
+      if (rawOrderId) {
+        const orderId = rawOrderId.split('_R')[0];
+        // Mark order as FAILED so they can retry
+        await prisma.order.update({
+          where: { id: orderId },
+          data: { status: 'FAILED' }
+        });
+      }
+    } else {
+      console.log('Received unhandled webhook type:', payload.type);
     }
 
     return NextResponse.json({ received: true });
