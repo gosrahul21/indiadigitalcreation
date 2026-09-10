@@ -52,7 +52,7 @@ export async function POST(req: Request) {
 
     // Determine the base URL for the return redirect
     const baseUrl = process.env.NEXTAUTH_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3001');
-
+    console.log({webhookUrl: baseUrl})
     const options = {
       method: 'POST',
       headers: {
